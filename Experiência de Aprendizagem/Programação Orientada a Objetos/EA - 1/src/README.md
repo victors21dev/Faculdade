@@ -9,6 +9,8 @@ Propor a implementação de um simples projeto em Java de um sistema para compra
 ### Explicando Parte do código
 #### Arquivo - Main.java
 ArrayList para armazenar palavras
+Para adicionar os filmes, criei um arraylist para armazena-lo, com isso, posso criar um new Filme para adicionar vários filmes e mesma lista.
+Colocando o nome, ano, duração, valor do ingresso e a sessão.
 ```java
 //      Entrada filmes
         List<Filme> filmes = new ArrayList<>();
@@ -19,6 +21,8 @@ ArrayList para armazenar palavras
 
 ```
 Criação de tabela utilizando o for estrutura de repetição
+Aqui é responsável por criar uma tabela, onde aparece a opção de escolha, nome do filme e etc.
+Utilizando for para passar por cada elemento da lista e lista-los.
 ```java
 //      Tabela
         System.out.print("--- Bem vindo! ---\n");
@@ -41,7 +45,7 @@ Criação de tabela utilizando o for estrutura de repetição
 ```
 
 IF para Estrutura de decisão
-
+Essa estrutura é responsável pela escolha do usuário, onde ele escolhe o filme e o ingresso (inteira ou meia). De acordo com sua escolha é selecionado o filme, cálculando o ingresso e mostrando as informações do filme e sessão.
 ```java
 //      Escolha
         System.out.print("Qual sua escolha? "); opcao = sc.nextInt();
@@ -62,6 +66,7 @@ IF para Estrutura de decisão
 ```
 #### Aquivo - Filme.java
 Orientação a objetos com class
+A class Filme orientada a objetos, podendo receber futuras atualizações.
 ```Java
     Filme(String nome, int ano, String duracao, int valor, String sessao){
         this.nome = nome;

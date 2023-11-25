@@ -96,6 +96,7 @@ public class MenuController {
 
                                     qtd++;
                                 }
+                                System.out.println();
                                 System.out.println("____Total____");
                                 System.out.print("Total a pagar R$ - " + total_pagar + ",00.");
 

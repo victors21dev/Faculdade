@@ -30,12 +30,12 @@ namespace PortalTransparencia{
             return total;
         }
 
-        public DateTime Periodo { get; set; }
-        public double Remuneracao { get; set; }
-        public double Comissao { get; set; }
-        public double HorasExtras { get; set; }
-        public double TetoRedutor { get; set; }
-        public double ContribuicaoPrevidenciaria { get; set; }
-        public double TotalLiquido { get; set; }
+        public DateTime Periodo;
+        public double Remuneracao;
+        public double Comissao;
+        public double HorasExtras;
+        public double TetoRedutor;
+        public double ContribuicaoPrevidenciaria;
+        public double TotalLiquido;
     }
 }

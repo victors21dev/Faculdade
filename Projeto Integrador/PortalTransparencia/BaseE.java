@@ -6,7 +6,7 @@
             Id = new Guid();
         }
 
-        public Guid Id
+        public Guid Id;
 
     }
 }

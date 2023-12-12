@@ -48,9 +48,9 @@ public class MenuController {
                             if(filme.getCod() == opcao) {
                                 if(filme.getfilme3D()){
                                     salvar_Ingressos(listagens, "VIP", (Ingresso.getPreco() * 2));
+                                    salvar_Ingressos(listagens,"Normal", Ingresso.getPreco());
                                     System.out.println(escolha_filme + ") " + Ingresso.getHorario() + " em sala " + Ingresso.getSala() + ". Ingresso VIP" + " no unitário de R$" + (Ingresso.getPreco() * 2) + ",00."  );
                                     escolha_filme++;
-                                    salvar_Ingressos(listagens,"Normal", Ingresso.getPreco());
                                     System.out.println(escolha_filme + ") " + Ingresso.getHorario() + " em sala " + Ingresso.getSala() + ". Ingresso Normal" + " no unitário de R$" + Ingresso.getPreco() + ",00."  );
                                     escolha_filme++;
                                 }else{

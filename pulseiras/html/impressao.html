@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:,">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tituloPag">Impressão Etiquetas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/print/print.css">
+</head>
+
+<body onload="load()">
+    <div class="telaImpressaoEtiqueta">
+        <main class="rotacaoEtiqueta">
+            <div class="pagImpressaoEtiqueta">
+                <div class="visualizacaoEtiqueta">
+                    <div id="areaDeImpressao" class="areaImpressao">
+                        <div>
+                            <img style="height:2cm; margin-left: 10px;" src="../assets/Logo HCB.png" alt="logoHCB">
+                        </div>
+                        <div style="display: flex;">
+                            <ul class="listaEtiqueta">
+                                <div style="display: inline-block;">
+                                    <div class="posicaoEtiqueta">
+                                        <div class="m-2">
+                                            <li class="fontSize"><span><strong>Nome: </strong></span><span id="nome"></span></li>
+    
+                                            <li class="fontSize"><span><strong>Data de Nasc.: </strong></span><span
+                                                    id="dataNasc"></span>
+                                            </li>
+    
+                                            <li class="fontSize"><span><strong>Mãe: </strong></span><span id="nomeMae"></span>
+                                            </li>
+    
+                                            <li class="fontSize"><span><strong>Internamento: </strong></span><span
+                                                    id="internamento"></span>
+                                            </li>
+    
+                                        </div>
+                                        <div class="m-2">
+                                            <li class="fontSize"><span><strong>Sexo: </strong></span><span id="sexo"></span></li>
+                                            <li class="fontSize"><span><strong>Alergia: </strong></span><span id="alergia"></span></li>
+                                            <li class="fontSize"><span><strong>Município: </strong></span><span id="municipio"></span></li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="../js/pagImpressao.js"></script>
+</body>
+
+</html>

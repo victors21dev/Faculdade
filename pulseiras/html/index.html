@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="data:,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Etiquetas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/print/print.css">
+</head>
+
+<body onload="carregamentoPag()">
+    <main class="tela">
+        <div class="conteudo">
+            <form id='some-form' class="row g-3 needs-validation" novalidate>
+                <!-- Nome completo -->
+                <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label">Nome completo</label>
+                    <input id="formNome" autocomplete="off" type="text" class="form-control" id="validationCustom01"
+                        required>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor, insira o Nome Completo.
+                    </div>
+                </div>
+                <!-- Data de Nascimento -->
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">Data de Nascimento</label>
+                    <input id="formDataNasc" autocomplete="off" type="date" class="form-control"
+                        id="validationCustom03" required value="">
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor, data de nascimento.
+                    </div>
+                </div>
+                <!-- Sexo -->
+                <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">Sexo</label>
+                    <select id="formSexo" autocomplete="off" class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Escolha...</option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                    </select>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor, escolha o sexo.
+                    </div>
+                </div>
+                <!-- Alergia -->
+                <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">Alergia</label>
+                    <select id="formAlergia" autocomplete="off" class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Escolha...</option>
+                        <option>Sim</option>
+                        <option>Não</option>
+                        <option>Não sabe informar</option>
+                    </select>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor, uma opção.
+                    </div>
+                </div>
+                <!-- Nome da Mãe -->
+                <div class="col-md-5">
+                    <label for="validationCustom03" class="form-label">Nome da Mãe</label>
+                    <input id="formNomeMae" autocomplete="off" type="text" class="form-control"
+                        id="validationCustom03" required>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor, digite o nome da Mãe.
+                    </div>
+                </div>
+                <!-- Internamento -->
+                <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">Internamento</label>
+                    <input id="formInternamento" autocomplete="off" class="form-control" id="validationCustom04"
+                        required>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor, digite a clínica.
+                    </div>
+                </div>
+                <!-- Municipio -->
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Município</label>
+                    <input id="formMunicipio" autocomplete="off" class="form-control" id="validationCustom04"
+                        required>
+                    <div class="valid-feedback">
+                        Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor, digite o município.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                        <input id="checkbox" valorCheck='0' onclick="verificarCheck()" class="form-check-input"
+                            type="checkbox">
+                        <label>
+                            Preencher com campos vazios.
+                        </label>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-start">
+                    <button onclick="gerarEtiqueta()" class="btn btn-primary">Visualizar impressão</button>
+                </div>
+                <div class="col-4 d-flex justify-content-start">
+                    <button onclick="telaValidacao()" class="btn btn-danger">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div id="telaLimpar" class="mensagemLimpar">
+        <div class="conteudoCard">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="d-flex justify-content-center">
+                        <h5 class="card-title">Limpar formulário?</h5>
+                    </div>
+                    <div class="d-flex p-2">
+                        <div class="col-6">
+                            <div class="d-flex justify-content-center">
+                                <button onclick="limparFormulario()" class="btn btn-primary">Sim</button>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-center">
+                                <button onclick="ocultarMensagemLimpar()" class="btn btn-danger">Não</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="telaImpressao" class="impressao">
+        <div class="cardImpressao">
+            <div class="visualizacaoEtiqueta p-4">
+                <div id="areaDeImpressao" class="areaImpressao">
+                    <div>
+                        <img style="height:2cm;" src="../assets/Logo HCB.png" alt="logoHCB">
+                    </div>
+                    <div>
+                        <ul class="listaEtiqueta">
+                            <div class="posicaoEtiqueta">
+                                <div>
+                                    <li class="m-1"><span><strong>Nome: </strong></span><span id="etNome"></span></li>
+
+                                    <li class="m-1"><span><strong>Data de Nascimento: </strong></span><span
+                                            id="etData"></span></li>
+
+                                    <li class="m-1"><span><strong>Nome da Mãe: </strong></span><span id="etMae"></span>
+                                    </li>
+
+                                    <li class="m-1"><span><strong>Internamento: </strong></span><span
+                                            id="etInternamento"></span></li>
+                                </div>
+                                <div>
+                                    <li class="m-1"><span><strong>Sexo: </strong></span><span
+                                            id="etSexo"></span></li>
+                                    <li class="m-1"><span><strong>Alergia: </strong></span><span
+                                            id="etAlergia"></span></li>
+                                    <li class="m-1"><span><strong>Município: </strong></span><span
+                                            id="etMunicipio"></span></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="botaoEtiqueta d-flex justify-content-center">
+                <a href="../html/impressao.html" target="_blank">
+                    <button onclick="imprimirEtiqueta()" class="btn btn-primary m-2">Imprimir</button>
+                </a>
+                <button onclick="btnVoltar()" class="btn btn-warning m-2">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="../js/validation.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/impressao.js"></script>
+    <script src="../js/pagImpressao.js"></script>
+</body>
+
+</html>

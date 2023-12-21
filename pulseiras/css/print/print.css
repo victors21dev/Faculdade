@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.rotacaoEtiqueta{
+    position: absolute;
+    top: calc(400px);
+    padding-left: 400px;
+    left: -620px;
+    transform: translate(-50%, 50%);
+    transform: rotate(90deg);
+}
+.pagImpressaoEtiqueta{
+    width: 25cm;
+    height: 2.3cm;
+}
+
+.posicaoEtiqueta{
+    display: flex;
+}
+.listaEtiqueta{
+    font-size: 0.40cm;
+}
+ul{
+    list-style: none;
+}
+.visualizacaoEtiqueta{
+    width: 100%;
+    height: 80%;
+}
+.areaImpressao{
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+.fontSize{
+    font-size: 12px;
+}

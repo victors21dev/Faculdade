@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki_dos_devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .item_div {
+            padding: 12px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="overflow: hidden;">
+        <div class="container">
+            <div>
+                <nav class="navbar" style="background-color: #e3f2fd;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Menu</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Inicial</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <h1>Arquitetura e Organização de Computadores</h1>
+            <p class="p-4">
+                A arquitetura de computadores é uma área da Computação aborda os conceitos básicos da computação,
+                incluindo o processamento de dados, sistemas de computação, evolução dos computadores, e a diferença
+                entre hardware e software. A importância de reconhecer o processamento de dados e sistemas de computação
+                se dá pela relevância da tecnologia da informação em um mundo cada vez mais digital.
+                A evolução tecnológica na área de arquitetura de computadores tem sido marcada por avanços
+                significativos ao longo do tempo. Desde os primórdios dos computadores, houve uma constante busca por
+                maior capacidade computacional, eficiência e inovação. Alguns dos principais aspectos que impulsionaram
+                essa evolução incluem: Desenvolvimento de Processadores, Aumento da Capacidade de Memória, Melhorias em
+                Componentes de Armazenamento, Avanços em Conectividade e Comunicação e Integração de Tecnologias
+                Emergentes.
+                O computador contém milhões de componentes eletrônicos e é considerado um sistema complexo. Para que se
+                possa descrever seus componentes, é necessário conhecer sua natureza hierárquica. O nível mais próximo
+                do usuário é considerado o alto nível, e aquele que representa os componentes eletrônicos é o baixo
+                nível. O processamento de dados deve permitir transformações de diferentes tipos de dados, gerando novos
+                dados, realizando cálculos, ajustes, etc. Esse é o núcleo do trabalho do computador. Já o armazenamento
+                de dados é uma função essencial, pois o computador precisa manter os dados que está utilizando no
+                processamento, mesmo que de forma temporária, mas também precisa guardar dados de forma estável, para
+                que possam ser utilizados posteriormente.
+                Quando pensamos em um computador atual, dificilmente todos os componentes que o compõem são percebidos.
+                Diversas características são abstraídas devido ao uso facilitado e humanizado da internet, com o qual
+                verificamos, por exemplo, as últimas notícias, os resultados esportivos, os horários de filmes em cartaz
+                ou extratos bancários.
+                Com isso em mente, entramos na computação moderna e suas subdivisões geracionais, entre as quais se
+                destacam: primeira geração (1946 até 1959); segunda geração (1959 até 1964); terceira geração (1964 até
+                1970); quarta geração (1970 até atualmente).
+                Sendo um computador um conjunto de equipamentos, estudaremos, aqui, quais são e para que servem
+                individualmente esses equipamentos, isto é: CPU ou processador; placa mãe; memória; disco rígido ou HD;
+                e periféricos (mouse, teclado, monitor, webcam, etc.).
+                A representação de dados nos computadores se baseia na informação mais básica de um sistema digital, o
+                bit (b). Bit significa binary digit (dígito binário) e é representado em um circuito de computador
+                composto por chaves elétricas de apenas dois estados, ligado ou desligado (alto ou baixo), conforme
+                lecionam Null e Lobur (2011). Na prática, esses dois estados são representados por zeros e uns e indicam
+                a forma como os computadores armazenam e manipulam dados para descrever qualquer caractere, como letras,
+                números e símbolos. O conjunto de oito bits, formado por zeros e uns, representa um byte (B).
+                Desde o IBM Stretch (1959), os computadores já tinham a capacidade de buscar instruções em memória e
+                armazená-las em um buffer, o que permitia que essas instruções fossem acessadas antecipadamente, isto é,
+                antes da conclusão da leitura da memória do computador. Esse processo de busca antecipada, na verdade,
+                paralelizava o processo, porque o dividia em duas partes, sendo elas a busca e a execução propriamente
+                dita das instruções. O conceito de pipeline amplia essa estratégia, porque permite dividir uma instrução
+                em diversas partes e dedicar uma parte do hardware para a execução de cada divisão da instrução.
+                Diversas são as tecnologias de memória que podem ser utilizadas em um computador. Elas se dividem em
+                dois grandes grupos: memória RAM e memórias ROM. A memória RAM, também chamada de memória principal ou
+                memória primária, é utilizada para leitura rápida e tem armazenamento volátil — os dados armazenados são
+                perdidos quando o computador é desligado. Ela interfere de forma direta no desempenho dos computadores.
+                A hierarquia de memórias tem entre seus objetivos proporcionar aos computadores o melhor custo–benefício
+                possível, utilizando uma mescla das tecnologias de memória que garanta uma redução do custo do
+                equipamento, sem causar impactos significativamente grandes na performance da máquina. Atualmente, o
+                esquema hierárquico ideal de memória está estruturado da seguinte forma: o nível superior e mais próximo
+                do processador é constituído pelos registradores do processador. Em seguida, os computadores possuem uma
+                memória de tamanho reduzido e de velocidade bastante alta, chamada de cache, onde dados e posições de
+                memória usados com maior frequência são temporariamente armazenados. Essa memória é complementada por
+                uma memória secundária, composta por discos rígidos e discos removíveis, chamados de memórias externas.
+                É nessa memória secundária que são armazenados, por exemplo, fotos e arquivos de texto, conforme
+                Stallings (2002).
+                A memória principal também é chamada de RAM (Random Access Memory), o que conceitualmente está correto,
+                uma vez que, no conjunto de memórias que fazem parte da memória principal, as memórias ROM também são de
+                acesso aleatório. A unidade central de processamento (CPU, do inglês central processing unit) do
+                computador possui internamente um tipo de memória que apresenta velocidade elevada, permitindo armazenar
+                informações temporárias para a execução de comandos. Essa memória é composta pelos chamados
+                registradores, que possuem tipos e funções diferentes.
+                Os barramentos são subsistemas usados para conectar componentes do computador e transferir dados entre
+                eles. Tendo em vista que um computador possui diversos componentes com funções específicas, os
+                barramentos têm o papel de coordenar a comunicação entre eles, de modo que os dados fluam de maneira
+                organizada e ágil, respeitando as características de cada tipo de barramento. Internamente, os
+                computadores possuem muitos componentes e, para que esses componentes possam se comunicar eles, utilizam
+                vias de dados, que são conhecidas como barramentos. Um barramento pode ser definido como um caminho
+                comum pelo qual a informação flui de um componente para outro no computador.
+                Um barramento de dados interno é um barramento que opera somente dentro dos circuitos internos da CPU,
+                comunicando-se entre os caches internos de memória que fazem parte do chip da CPU. O barramento de dados
+                externo é um tipo de barramento que transporta dados entre vários componentes externos e a CPU. Ele
+                realiza uma comum. Tipos e características de barramentos internos e externos de dados entre
+                dispositivos externos, como monitor, teclado, mouse, disco rígido externo, etc.
+                Os dispositivos de entrada e saída (E/S) auxiliam no propósito básico de um computador, que é a
+                resolução de problemas, pois são os mecanismos que permitem a comunicação entre os usuários e o
+                computador, ou a comunicação entre os computadores. A categorização desses dispositivos se dá levando em
+                consideração o sentido da comunicação. Sendo assim, os mesmos são classificados como dispositivos de
+                entrada — que permitem a entrada de dados para a etapa de processamento — e dispositivos de saída — que
+                atuam na entrega dos dados processados.
+            </p>
+            <h1>Perguntas</h1>
+            <div class="div_design">
+
+            </div>
+            <div>
+                <button onclick="checarResultado()" type="button" class="btn btn-success">Enviar respostas</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Add perguntas -->
+    <script>
+        let div = document.querySelector(".div_design")
+        let perguntasOS = new Object();
+
+        perguntasOS.title = [
+            'A CPU dos computadores tem uma estrutura lógica composta por:',
+            'Em um computador, o processamento de dados se dá na seguinte sequência:',
+            'Os componentes de memória de um sistema computacional obedecem a uma hierarquia referente a velocidade de acesso e capacidade de armazenamento. As memórias mais próximas ao processador e mais rapidamente acessadas por ele são classificadas de memórias de alto nível, são elas:',
+            'Os barramentos são fundamentais para o funcionamento interno do computador e permitem a comunicação dos componentes de hardware. O barramento que possui uma única função definida recebe o nome de:',
+            'São exemplos de dispositivos de E/S:'
+        ]
+
+        let value = 1;
+        perguntasOS.title.forEach(element => {
+            div.innerHTML += `
+                <div class="item_div">
+                    <h6>${value}. ${element}</h2>
+                    <div id="arqpergunta${value}" result="null"></div>
+                </div>`
+            value++
+        });
+    </script>
+
+    <!-- Add questões -->
+    <script>
+        let esquema = ['a)', 'b)', 'c)', 'd)']
+
+        let questaoOS = new Object();
+
+        questaoOS.questao1 = ['Uma unidade de lógica aritmética e uma unidade de controle', 'Uma unidade de núcleos e uma unidade de memórias', 'Uma unidade de energia e uma unidade de processamento', 'Uma unidade de gerenciamento e uma unidade de armazenamento']
+        questaoOS.questao2 = ['Entrada, armazenamento e saída de dados', 'Entrada, processamento e saída de dados', 'Entrada, gerenciamento de processos e saída de dados', 'Entrada, controle, processamento e saída de processos']
+        questaoOS.questao3 = ['Disco rígido e SSD', 'Memória RAM e Pen drive', 'Registradores e cachê', 'Memória virtual']
+        questaoOS.questao4 = ['Barramento de dados', 'Barramento versátil', 'Barramento síncrono', 'Barramento dedicado']
+        questaoOS.questao5 = ['Processadores e pentes de memória', 'Mouses e teclados', 'Discos rígidos e SSD', 'Barramentos internos e externos']
+
+        let totalQuestoes = 5;
+
+        function addQuestao(n, numero_questao) {
+            let v = 1
+            numero_questao.forEach(element => {
+                let d = document.querySelector(`#arqpergunta${n + 1}`)
+                d.innerHTML += `
+                        <div class="form-check">
+                                <input onclick="resultado(this)" class="form-check-input" type="radio" name="osdefalt${n + 1}" id="osdefalt${n + 1}" valuecheck='${v}'>
+                                <label class="form-check-label" for="osdefalt${n + 1}">
+                                    ${esquema[v - 1]} ${element}
+                                </label>
+                                </div>
+                            </div>
+                        `
+                v++
+            })
+        }
+
+        for (let n = 0; n < (totalQuestoes); n++) {
+            switch (n + 1) {
+                case 1:
+                    addQuestao(n, questaoOS.questao1)
+                    break;
+                case 2:
+                    addQuestao(n, questaoOS.questao2)
+                    break;
+                case 3:
+                    addQuestao(n, questaoOS.questao3)
+                    break;
+                case 4:
+                    addQuestao(n, questaoOS.questao4)
+                    break;
+                case 5:
+                    addQuestao(n, questaoOS.questao5)
+                    break;
+            }
+        }
+    </script>
+
+    <script>
+        function resultado(i) {
+            let valor = i.getAttribute("valuecheck")
+            i.parentElement.parentElement.setAttribute("result", valor)
+        }
+    </script>
+
+    <script>
+        function checarResultado() {
+            let escolhidos = []
+            let certas = ['1', '3', '3', '4', '2']
+            let acertadas = 0
+
+            let check = true
+            let item_div = document.querySelectorAll(".item_div")
+            item_div.forEach(element => {
+                if (element.childNodes[3].getAttribute("result") == "null") {
+                    check = false
+                }
+            })
+
+            // Ir para resultado
+            if (!check) {
+                alert("Por favor, preencha os campos vazios")
+            } else {
+                item_div.forEach(element => {
+                    escolhidos.push(element.childNodes[3].getAttribute("result"))
+
+                })
+                for (let i = 0; i < 5; i++) {
+                    if (escolhidos[i] == certas[i]) {
+                        acertadas++
+                    }
+                }
+
+                let resultado = { materia: "Arquitetura e Organização de Computadores", Acertos: acertadas}
+                localStorage.setItem('resultado_ARQ', JSON.stringify(resultado))
+
+                window.location.href = 'index.html'
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

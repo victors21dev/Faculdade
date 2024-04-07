@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki_dos_devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .item_div {
+            padding: 12px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="overflow: hidden;">
+        <div class="container">
+            <div>
+                <nav class="navbar" style="background-color: #e3f2fd;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Menu</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Inicial</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <h1>Sistemas Operacionais</h1>
+            <p class="p-4">Existe um conjunto de softwares que é responsável por facilitar a execução de programas,
+                permitindo que
+                os programas compartilhem memória, interajam com os dispositivos e outros programas. Esse conjunto de
+                softwares é chamado de sistema operacional (SO) e é responsável por garantir que o sistema funcione de
+                maneira correta e eficiente, sem que o usuário precise preocupar-se com detalhes de execução.
+                Um sistema computacional pode ser dividido em quatro componentes: o hardware, o sistema operacional, os
+                programas aplicativos e o usuário (TANENBAUM, 2014). O hardware — a unidade central de processamento
+                (CPU), a memória e os dispositivos de entrada/saída (E/S) — fornece os recursos básicos de computação
+                para sistema. Os programas aplicativos, como processadores de texto, planilhas, compiladores e
+                navegadores da web, definem as maneiras pelas quais esses recursos são usados para resolver problemas de
+                computação dos usuários. O sistema operacional, por sua vez, controla o hardware e coordena seu uso
+                entre os vários programas aplicativos para os usuários.
+                O sistema operacional pode ser definido como o único programa em execução em todos os momentos no
+                computador — geralmente, é chamado de kernel. Junto ao kernel, existem dois outros tipos de programas:
+                programas do sistema ou system programs, que estão associados ao sistema operacional, mas não
+                necessariamente fazem parte do kernel; e programas aplicativos, que incluem todos os programas não
+                associados à operação do sistema.
+                Logo, o sistema operacional realiza a comunicação com a memória, alocando e desalocando espaços para que
+                as aplicações possam inserir ou remover informações. Além disso, o sistema operacional controla a CPU e
+                os outros dispositivos, realizando operações neles e abstraíndo complexidades que, caso não existissem,
+                seriam de responsabilidade das aplicações.
+                Num sistema operacional de computador contém milhões de linhas de instruções escritas por programadores.
+                Para tornar os sistemas operacionais mais fáceis de serem escritos, eles são desenvolvidos em módulos,
+                cada módulo sendo responsável por uma função. Os módulos típicos em um sistema operacional multiusuário
+                geralmente são: (i) núcleo; (ii) gerenciador de processos; (iii) gerenciador de memória; e (iv)
+                gerenciador de arquivos.
+                Para que o sistema operacional consiga gerenciar os processos a serem executados é utilizado pelo
+                sistema um descritor de processo, também conhecido como bloco de controle de processo (PCB).
+                Um conceito muito importante no contexto de sistemas operacionais é o de hierarquia de memória, na qual
+                os computadores podem ter:  poucos megabytes de memória cache, volátil, muito rápida e cara;  alguns
+                gigabytes de memória principal, volátil, de média velocidade e com preço também médio; Componentes de um
+                sistema operacional 5  alguns terabytes de armazenamento em disco magnético ou em estado sólido, não
+                volátil, lento e barato. Além disso, existe o armazenamento removível, como dos DVDs e pen drives. É
+                trabalho do sistema operacional abstrair essa hierarquia de forma utilizável para o usuário e, em
+                seguida, gerenciar a abstração.
+                Um processo é basicamente um programa em execução. A execução de um processo geralmente ocorre de forma
+                sequencial e é definida como uma entidade que representa a unidade básica de trabalho a ser implementada
+                no sistema. Em termos simples, escrevemos nossos programas de computador em um arquivo de texto e,
+                quando executamos esse programa, ele se torna um processo que executa todas as tarefas mencionadas no
+                texto. O sistema operacional abstrai toda essa execução, realizando diversas operações e escalonamentos.
+                Processos são considerados um dos principais conceitos em um sistema operacional. De acordo com Machado
+                e Maia (2007), um processo consiste em um programa em execução. No entanto, trata-se de uma definição
+                redutora. Atualmente, o processador atua como uma linha de produção, executando diversos programas em
+                sequência de forma simultânea, como ler livros na web, baixar arquivos e navegar na internet.
+                A CPU muda de um processo para outro o tempo todo, troca chamada de multiprogramação (BARBOSA, 2018).
+                Considerando isso, é preciso especificar no que realmente consiste o pseudoparalelismo. No sistema
+                operacional, vários processos compartilham recursos ao mesmo tempo, e quem decide qual processo deve ser
+                executado é o escalonador baseado no algoritmo de escalonamento. Isso significa que o escalonamento do
+                processo é o mecanismo pelo qual o sistema determina qual processo executar em um determinado momento.
+                Ele é responsável por alocar recursos do sistema, como tempo de CPU e memória, para vários processos a
+                fim de mantê-los funcionando de forma eficiente e honesta.
+                Uma thread é, essencialmente, uma subdivisão de um processo. Ao passo que um processo é uma instância de
+                um programa em execução que tem seu próprio espaço de endereço e recursos do sistema, uma thread é uma
+                sequência de instruções dentro desse processo que pode ser programada para executar tarefas em paralelo
+                com outras threads. Cada thread compartilha os recursos do processo-pai, incluindo o espaço de memória e
+                os arquivos abertos, mas mantém seu próprio contador de programa, que mantém o controle de qual
+                instrução a thread está atualmente executando, e sua própria pilha, que contém as informações
+                necessárias para a execução da thread (STALLINGS, 2018).
+                A hierarquia de dados em um sistema operacional refere-se à organização e à estruturação dos dados
+                armazenados e acessados pelo sistema. Essa hierarquia é geralmente composta por diferentes níveis ou
+                camadas, cada uma com características distintas em termos de velocidade, capacidade de armazenamento,
+                volatilidade e acessibilidade (TANENBAUM; BOS, 2015).
+                Tanto os dispositivos móveis quanto os dispositivos de rede utilizam um sistema operacional que permite
+                o seu funcionamento. Por meio desses sistemas operacionais, os usuários podem realizar a configuração
+                dos dispositivos. O sistema operacional Android foi originalmente criado pela Android Inc., comprada
+                pelo Google em 2005. O Google se uniu a outras empresas para formar a Open Handset Alliance (OHA), que
+                se tornou responsável pelo desenvolvimento contínuo do sistema operacional Android.
+                A virtualização consiste em estender ou substituir um recurso ou uma interface existente por um outro de
+                modo a imitar um comportamento. Essa substituição é feita por meio de uma camada de software responsável
+                por transformar ações de um sistema em outro (CARISSIMI, 2008). Apesar de parecer confuso, esse é
+                exatamente o princípio da virtualização no mundo computacional, permitir que um computador, seja pessoal
+                ou servidor, atue como se fosse vários computadores, porém em um único hardware, usufruindo dos mesmos
+                recursos.
+            </p>
+            <h1>Perguntas</h1>
+            <div class="div_design">
+
+            </div>
+            <div>
+                <button onclick="checarResultado()" type="button" class="btn btn-success">Enviar respostas</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add perguntas -->
+    <script>
+        let div = document.querySelector(".div_design")
+        let perguntasOS = new Object();
+
+        perguntasOS.title = [
+            'Descreve os mecanismos de hardware responsáveis pelos sistemas operacionais da terceira geração (1965–1980):',
+            'Selecione a opção que completa corretamente a seguinte afirmação: “Os sistemas operacionais funcionam como intermediadores entre   ________e _________, garantindo o funcionamento do sistema computacional”:',
+            'Para que o sistema operacional consiga gerenciar os processos a serem executados é utilizado pelo sistema um descritor de processo, também conhecido:',
+            'É um tipo de arquivo para o sistema LINUX:',
+            'Uma thread pode ser classificada como:'
+        ]
+
+        let value = 1;
+        perguntasOS.title.forEach(element => {
+            div.innerHTML += `
+                <div class="item_div">
+                    <h6>${value}. ${element}</h2>
+                    <div id="ospergunta${value}" result="null"></div>
+                </div>`
+            value++
+        });
+    </script>
+
+    <!-- Add questões -->
+    <script>
+        let esquema = ['a)', 'b)', 'c)', 'd)']
+
+        let questaoOS = new Object();
+
+        questaoOS.questao1 = ['CIs e multiprogramação', 'Transistores e sistemas de lote', 'Válvulas e painéis de conectores', 'Computadores pessoais']
+        questaoOS.questao2 = ['Registradores e cachê', 'Núcleo e Thread', 'Hardware e Software', 'Barramentos interno e barramento externo']
+        questaoOS.questao3 = ['Bloco de acesso de processo', 'Bloco de gerenciamento de processo', 'Bloco de controle de processo', 'Bloco de barramento de acesso']
+        questaoOS.questao4 = ['FAT', 'NTFS', 'HPFS', 'EXT']
+        questaoOS.questao5 = ['Núcleo de um processador', 'Um segmento de um processo (aplicativo em execução)', 'O sistema de hierarquia de memorias de um sistema', 'O formato de um arquivo armazenado']
+
+        let totalQuestoes = 5;
+
+        function addQuestao(n, numero_questao) {
+            let v = 1
+            numero_questao.forEach(element => {
+                let d = document.querySelector(`#ospergunta${n + 1}`)
+                d.innerHTML += `
+                        <div class="form-check">
+                                <input onclick="resultado(this)" class="form-check-input" type="radio" name="osdefalt${n + 1}" id="osdefalt${n + 1}" valuecheck='${v}'>
+                                <label class="form-check-label" for="osdefalt${n + 1}">
+                                    ${esquema[v - 1]} ${element}
+                                </label>
+                                </div>
+                            </div>
+                        `
+                v++
+            })
+        }
+
+        for (let n = 0; n < (totalQuestoes); n++) {
+            switch (n + 1) {
+                case 1:
+                    addQuestao(n, questaoOS.questao1)
+                    break;
+                case 2:
+                    addQuestao(n, questaoOS.questao2)
+                    break;
+                case 3:
+                    addQuestao(n, questaoOS.questao3)
+                    break;
+                case 4:
+                    addQuestao(n, questaoOS.questao4)
+                    break;
+                case 5:
+                    addQuestao(n, questaoOS.questao5)
+                    break;
+            }
+        }
+    </script>
+
+    <script>
+        function resultado(i) {
+            let valor = i.getAttribute("valuecheck")
+            i.parentElement.parentElement.setAttribute("result", valor)
+        }
+    </script>
+
+    <script>
+        function checarResultado() {
+            let escolhidos = []
+            let certas = ['1', '3', '3', '4', '2']
+            let acertadas = 0
+
+            let check = true
+            let item_div = document.querySelectorAll(".item_div")
+            item_div.forEach(element => {
+                if (element.childNodes[3].getAttribute("result") == "null") {
+                    check = false
+                }
+            })
+
+            // Ir para resultado
+            if (!check) {
+                alert("Por favor, preencha os campos vazios")
+            } else {
+                item_div.forEach(element => {
+                    escolhidos.push(element.childNodes[3].getAttribute("result"))
+                })
+                for (let i = 0; i < 5; i++) {
+                    if (escolhidos[i] == certas[i]) {
+                        acertadas++
+                    }
+                }
+
+                let resultado = { materia: "Sistemas Operacionais", Acertos: acertadas}
+                localStorage.setItem('resultado_OS', JSON.stringify(resultado))
+
+                window.location.href = 'index.html'
+            }
+
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

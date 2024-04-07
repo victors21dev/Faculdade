@@ -1,116 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OS & ARQ</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki_dos_devs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .card_design {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="bg-white">
-        <header class="absolute inset-x-0 top-0 z-50">
-          <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-              </a>
-            </div>
-            <div class="flex lg:hidden">
-              <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                <span class="sr-only">Open main menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </button>
-            </div>
-            <div class="hidden lg:flex lg:gap-x-12">
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
-            </div>
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-            </div>
-          </nav>
-          <!-- Mobile menu, show/hide based on menu open state. -->
-          <div class="lg:hidden" role="dialog" aria-modal="true">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-50"></div>
-            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-              <div class="flex items-center justify-between">
-                <a href="#" class="-m-1.5 p-1.5">
-                  <span class="sr-only">Your Company</span>
-                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-                </a>
-                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                  <span class="sr-only">Close menu</span>
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              <div class="mt-6 flow-root">
-                <div class="-my-6 divide-y divide-gray-500/10">
-                  <div class="space-y-2 py-6">
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
-                  </div>
-                  <div class="py-6">
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-                  </div>
-                </div>
-              </div>
+  <div style="overflow: hidden;">
+    <div class="container">
+      <div>
+        <nav class="navbar" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Inicial</a>
+                </li>
+                <li class="nav-item">
+                  <a href="os.html" class="nav-link">Sistemas Operacionais</a>
+                </li>
+                <li class="nav-item">
+                  <a href="arq.html" class="nav-link">Arquitetura e Organização de Computadores</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </header>
-      
-        <div class="relative isolate px-6 pt-14 lg:px-8">
-          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </nav>
+      </div>
+      <div style="text-align: center;" class="p-4">
+        <h1>Olá, muito bem vindo a nossa página!</h1>
+        <p>Essa página é um simulado! Por favor escolha sua disciplina abaixo</p>
+      </div>
+      <div class="mb-4" style="text-align: center;">
+        <h2>Suas notas</h2>
+        <table class="table" style="max-width: 500px; position: relative; left: 50%; transform: translateX(-50%);">
+          <thead>
+            <tr>
+              <th scope="col">Disciplina</th>
+              <th scope="col">Nota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Sistemas Operacionais</th>
+              <td id="nota1"></td>
+            </tr>
+            <tr>
+              <th scope="row">Arquitetura e Organização de Computadores</th>
+              <td id="nota2"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card_design">
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://ctrlplay.com.br/wp-content/uploads/2022/12/Banner-Blog-1.png" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sistemas Operacionais</h5>
+            <p class="card-text">Um sistema operacional é um software ou conjunto de softwares que administra e gerencia
+              os recursos de um sistema. Esses recursos incluem componentes de hardware, sistemas de arquivos e
+              programas de terceiros. O sistema operacional atua como a interface entre o computador e o usuário.</p>
+            <a href="os.html" class="btn btn-primary">Iniciar com OS</a>
           </div>
-          <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-              </div>
-            </div>
-            <div class="text-center">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
-              <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-              <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/ABasicComputer.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arquitetura e Organização de Computadores</h5>
+            <p class="card-text">A Arquitetura de Computadores e a Organização de Computadores são conceitos
+              fundamentais no estudo dos sistemas de computação. Descreve o que o computador faz. Ela fornece os
+              detalhes funcionais e o comportamento de um sistema de computador. Organização do computador se refere à
+              forma como as partes operacionais de um sistema de computador estão interligadas.</p>
+            <a href="arq.html" class="btn btn-primary">Iniciar com ARQ e ORG</a>
           </div>
         </div>
       </div>
-      
+    </div>
+  </div>
 
-    <script defer>
-        const defaultTheme = require('tailwindcss/defaultTheme')
+  <script>
+    let nota1 = document.querySelector("#nota1")
+    let nota2 = document.querySelector("#nota2")
 
-        module.exports = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-                    },
-                },
-            },
-            // ...
-        }
-    </script>
+    let resultado_OS = localStorage.getItem('resultado_OS');
+    let resultado_ARQ = localStorage.getItem('resultado_ARQ');
+
+    if (resultado_OS == null) {
+      nota1.innerHTML = "Vazio"
+    }
+    else {
+      nota1.innerHTML = JSON.parse(resultado_OS).Acertos
+    }
+    if (resultado_ARQ == null) {
+      nota2.innerHTML = "Vazio"
+    } else {
+      nota2.innerHTML = JSON.parse(resultado_ARQ).Acertos
+    }
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

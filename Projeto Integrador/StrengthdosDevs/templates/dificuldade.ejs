@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html <%- include ('./partials/lang.ejs')%>>
+
+<head>
+    <link rel="stylesheet" href="./styles/loading.css">
+    <link rel="stylesheet" href="./styles/dificuldade.css">
+    <%- include ('./partials/head.ejs')%>
+        <%- include ('./partials/title.ejs')%>
+            <%- include ('./partials/fontawesome.ejs')%>
+</head>
+
+<body onload="get()">
+    <div class="loading_div" style="display: block;">
+        <div class="load">
+            <i class="fa-solid fa-spinner"></i>
+            <h4>Loading...</h4>
+        </div>
+    </div>
+    <div id="cont" class="fundo">
+        <main class="content">
+            <h1><span><i class="fa-solid fa-code"></i></span> Escolha um nível</h1>
+            <div id="resultado" class="list_dif">
+
+            </div>
+        </main>
+    </div>
+
+    <script defer src="./scripts/dificuldade.js"></script>
+    <script defer>
+        // ler dados
+        async function get() {
+            let resultado = document.querySelector("#resultado")
+            const url = `/dificuldades_game`
+            const response = await fetch(url);
+            const responseJson = await response.json();
+
+            responseJson.forEach(element => {
+
+                let imgSrc = element.id_nivel
+                resultado.innerHTML += `
+                <div class="card_dificuldade">
+                    <div>
+                        <img id_img="${element.id_nivel}" class="img_nivel" src="${images[imgSrc - 1]}">
+                    </div>
+                    <div>
+                        <button id_nivel="${element.id_nivel}" onclick="game(this)" onmouseout="out(this)" onmouseover="over(this)">
+                            ${arrow[element.id_nivel - 1]}
+                            ${element.nivel}
+                        </button>
+                    </div>
+                </div>
+                `
+            });
+            setTimeout(() => {
+                let loading_tela = document.querySelector(".loading_div")
+                loading_tela.setAttribute("style", "animation-name: none_display; animation-duration: 1s;animation-fill-mode:both; display='none'")
+            }, 100)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html <%- include ('./partials/lang.ejs')%>>
+
+<head>
+    <link rel="stylesheet" href="./styles/styleInicial.css">
+    <%- include ('./partials/head.ejs')%>
+        <%- include ('./partials/title.ejs')%>
+            <%- include ('./partials/fontawesome.ejs')%>
+</head>
+
+<body>
+    <main class="container">
+        <section class="section_initial">
+            <div class="fundo_background">
+                <i class="fa-solid fa-gamepad"></i>
+                <h1>Strength dos Devs</h1>
+            </div>
+            <div class="apre_grid">
+                <div class="margin_p description">
+                    <h4>Bem vindos ao nosso Projeto Integrador!</h4>
+                    <p>Tenha uma ótima partida! Aperta em start para iniciar</p>
+                    <div class="button_iniciar_game">
+                            <button onclick="direcionar()">
+                                <div><i class="fa-solid fa-play"></i></div>
+                                <div>Start</div>
+                            </button>
+                    </div>
+                </div>
+                <div>
+                    <figure class="margin_p figure_design">
+                        <img class="img_size" src="./images/lagom-guys-play-video-games-while-sitting-in-chair-bags.png"
+                            alt="gif">
+                        <figcaption>
+                            Illustration by <a target="_blank" href="https://icons8.com/illustrations/author/cj62pzCRUq1N">Julia
+                                Buzatti</a> from <a target="_blank" href="https://icons8.com/illustrations">Ouch!</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <a id="link_a" href="#team_div_section">
+                <div class="div_button_arrow">
+                    <div class="button_arrow">
+                        <p>
+                            Integrantes
+                        </p>
+                        <div class="circle">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <section id="team_div_section" class="container_eq">
+            <h4>Desenvolvido por:</h4>
+            <div id="team_div">
+                
+            </div>
+        </section>
+        <!-- <section class="config">
+            <button onclick="config()">
+                <div>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        Configurações para os membros
+                    </div>
+                </div>
+            </button>
+        </section> -->
+    </main>
+    <script src="./scripts/team.js"></script>
+    <script src="./scripts/inicial.js"></script>
+    <script>
+        function direcionar(){
+            redirecionamento("dificuldade")
+        }
+        function config(){
+            redirecionamento("login")
+        }
+
+        function redirecionamento(local){
+            window.location.href = `/${local}`
+        }
+    </script>
+</body>
+
+</html>

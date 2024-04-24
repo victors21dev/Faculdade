@@ -1,0 +1,170 @@
+@media screen and (max-width: 1980px){
+    figcaption{
+        font-size: 2em;
+    }
+    .button_iniciar_game button{
+        margin: 26px;
+        padding: 18px 30px;
+        font-size: 1.6em;
+    }
+    .container_eq{
+        max-width: calc(1980px - 26px);
+    }
+    .description h4{
+        font-size: 2em;
+        padding: 4px 0px;
+    }
+    .description p{
+        font-size: 1.2em;
+        padding: 8px 0px;
+    }
+    .div_button_arrow{
+        max-width: calc(1980px - 8px);
+        margin-right: 16px;
+    }
+    .fundo_background{
+        font-size: 2.4em;
+        gap: 26px;
+    }
+    .img_size{
+        width: 420px;
+    }
+    .section_initial{
+        grid-template-rows: 240px auto 80px;
+    }
+}
+@media screen and (max-width: 1600px){
+    figcaption{
+        font-size: 1em;
+    }
+    #team_div {
+        gap: 80px;
+        margin: 32px;
+    }
+    .apre_grid{
+        flex-wrap: nowrap;
+        padding: 4px;
+    }
+    .button_arrow{
+        max-width: calc(1600px - 8px);
+    }
+    .button_iniciar_game button{
+        margin: 18px;
+        padding: 10px 16px;
+        font-size: 1.6em;
+    }
+    .container_eq{
+        max-width: calc(1600px - 26px);
+    }
+    .description h4{
+        font-size: 1.8em;
+        padding: 4px 0px;
+    }
+    .description p{
+        font-size: 1em;
+        padding: 8px 0px;
+    }
+    .div_button_arrow{
+        max-width: calc(1600px - 8px);
+    }
+    .fundo_background{
+        font-size: 1.8em;
+        gap: 18px;
+    }
+    .img_size{
+        width: 100%;
+    }
+    .section_initial{
+        grid-template-rows: 80px auto 80px;
+    }
+}
+@media screen and (max-width:800px){
+    :root{
+        --width_square_img: 200px;
+    }
+    #team_div {
+        gap: 12px;
+        margin: 16px;
+    }
+    button{
+        margin: 2px;
+    }
+    .apre_grid{
+        flex-wrap: wrap-reverse;
+    }
+    .card_dificuldade{
+        display: grid;
+        justify-content: center;
+    }
+    .container_eq{
+        max-width: calc(800px - 26px);
+    }
+    .content{
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .div_button_arrow{
+        max-width: calc(800px - 8px);
+        padding-right: 12px;
+    }
+    .img_nivel{
+        height: 140px;
+    }
+    .section_initial{
+        grid-template-rows: 60px auto 80px;
+    }
+    .list_dif{
+        display: grid;
+        width: 100%;
+        padding: 2px;
+        gap: 6px;
+        grid-template-rows: auto auto auto;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 500px){
+    :root{
+        --width_square_img: 220px;
+    }
+    figcaption{
+        font-size: 0.8em;
+    }
+    #team_div{
+        gap:4px;
+        justify-content: center;
+    }
+    .apre_grid{
+        flex-wrap: wrap-reverse;
+        align-items: flex-end;
+    }
+    .button_iniciar_game button{
+        margin: 26px;
+        padding: 8px 16px;
+        font-size: 1.4em;
+    }
+    .container_eq h4{
+        font-size: 1.1em;
+    }
+    .description h4{
+        font-size: 1.4em;
+        padding: 4px 0px;
+    }
+    .description p{
+        font-size: 1em;
+        padding: 8px 0px;
+    }
+    .fundo_background{
+        font-size: 1.2em;
+        gap: 12px;
+    }
+    .img_size{
+        width: 276px;
+    }
+    .section_initial{
+        grid-template-rows: 90px auto 80px;
+    }
+}

@@ -1,0 +1,19 @@
+<h1>Aaaa</h1>
+<button onclick="logOut()">
+    sair
+</button>
+<%- include ('./partials/firebase_scripts.ejs')%>
+<script defer>
+    function logOut(){
+        auth.signOut()
+        .then(() => {
+            // Sign-out successful.
+            setTimeout(() => {
+                window.location.href = "/login"
+            }, 1000)
+        }).catch((error) => {
+            // An error happened.
+        })
+    }
+
+</script>
